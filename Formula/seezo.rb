@@ -4,26 +4,26 @@
 class Seezo < Formula
   desc "Run Seezo Security Design Reviews from the terminal or CI"
   homepage "https://seezo.io"
-  version "0.1.0"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Seezo-io/cli/releases/download/v0.1.0/seezo_0.1.0_darwin_arm64.tar.gz"
-      sha256 "37a2256d625479d227f8e7d1cb2e5a2dd27e00dcb048ec06ae1adedc91eab330"
+      url "https://github.com/Seezo-io/cli/releases/download/v0.1.2/seezo_0.1.2_darwin_arm64.tar.gz"
+      sha256 "f964d112aa96b4012a34f051baef67dcf3def9a8244246329b44d48518ddfbb6"
     else
-      url "https://github.com/Seezo-io/cli/releases/download/v0.1.0/seezo_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3c5beb4ae5653eb091ab1e7da458e2385fbdf8256231717bc83226911ad362ea"
+      url "https://github.com/Seezo-io/cli/releases/download/v0.1.2/seezo_0.1.2_darwin_amd64.tar.gz"
+      sha256 "3d42c1bab168d20891b6c479a56dec145f63090a1be8bcf95a8cbeed2fb68280"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Seezo-io/cli/releases/download/v0.1.0/seezo_0.1.0_linux_arm64.tar.gz"
-      sha256 "76281ce0bfbc2c88fee3bc8bc42699a984f1f8b2ca10698b3c0a4b7790f2fbb9"
+      url "https://github.com/Seezo-io/cli/releases/download/v0.1.2/seezo_0.1.2_linux_arm64.tar.gz"
+      sha256 "56ff7bfb9b4c06faf1b441117874b133699cc96d48fa37b6ce4e9348cb05d4af"
     else
-      url "https://github.com/Seezo-io/cli/releases/download/v0.1.0/seezo_0.1.0_linux_amd64.tar.gz"
-      sha256 "7c576a457c5c9b05befb3cfb536490a5a3db90a9543d7a8e1ac50501570bb49c"
+      url "https://github.com/Seezo-io/cli/releases/download/v0.1.2/seezo_0.1.2_linux_amd64.tar.gz"
+      sha256 "f70168577df53bf8ded9c536aa0cb0b456819d0d957dab67499a09af7faacafe"
     end
   end
 
