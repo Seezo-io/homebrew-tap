@@ -14,3 +14,5 @@ brew install seezo
 ```
 
 See [Seezo-io/cli](https://github.com/Seezo-io/cli) for CLI documentation.
+
+> **Note:** installs work once [Seezo-io/cli](https://github.com/Seezo-io/cli) releases are publicly downloadable. Until then, org members should use `gh release download --repo Seezo-io/cli`.
