@@ -18,30 +18,30 @@ end
 class Seezo < Formula
   desc "Run and manage Seezo security assessments"
   homepage "https://seezo.io"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/479559412",
+      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/523842873",
           using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "dd2858d05d32b7c31b6a29445dfeba79748afe15456b289236c199c39a356b83"
+      sha256 "f660c8d9c528d861fb8cf1a93fe2139a710afe33ce9c1f5ae3eb7a5bed51fe85"
     else
-      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/479559427",
+      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/523842871",
           using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "dbbda32b41faa2d3a4a214581e78f07c1aa4f6692040850af173685ebfd7a980"
+      sha256 "5cdf3e97e3f5b23b2f1044046c2cf56aad7f2182ef7dd44cc705d68b1d6322a4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/479559402",
+      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/523842900",
           using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "4b3337c9c4227e8059ae0b50f4edc3dbd8d44b97f6b9d2e83fcba2a226632c0e"
+      sha256 "c38669527f32dccaba74355686ab7c4db3b0a220971cb33a97650a64c390dcd6"
     else
-      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/479559403",
+      url "https://api.github.com/repos/Seezo-io/cli/releases/assets/523842899",
           using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "7f4faeeea6c221be3793990b83e818c97866e1d4b8b518c32a419d31d19750df"
+      sha256 "27e77da80c88cd2d9c8606c76d14d2e4f6d93785154c62a2ad9b2c2f179b70a7"
     end
   end
 
